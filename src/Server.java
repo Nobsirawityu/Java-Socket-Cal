@@ -60,7 +60,7 @@ public class Server {
                 socket.close();
                 System.out.println("Client Disconnected");
             } catch (Exception e) {
-                System.out.println("hello");
+                //System.out.println("hello");
             }
         }
     }

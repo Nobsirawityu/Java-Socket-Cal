@@ -17,15 +17,22 @@ public class Client {
         int operation = scan.nextInt();
         String massage = "";
 
-        if(operation >=1 && operation <=5){
+        if(operation >=1 && operation <=4){
             System.out.println("Enter first number : ");
             double first = scan.nextDouble();
             System.out.println("Enter second number : ");
             double sec = scan.nextDouble();
             massage = "/"+Integer.toString(operation)+"/"+ Double.toString(first)+"/"+Double.toString(sec)+"/";
         }
+        else if(operation == 5){
+            System.out.println("Enter base   number : ");
+            double first = scan.nextDouble();
+            System.out.println("Enter degree number : ");
+            double sec = scan.nextDouble();
+            massage = "/"+Integer.toString(operation)+"/"+ Double.toString(first)+"/"+Double.toString(sec)+"/";
+        }
         else if(operation == 6 ){
-            System.out.println("Enter number : ");
+            System.out.println("Enter base number : ");
             double first = scan.nextDouble();
             double sec = 0;
             massage = "/"+Integer.toString(operation)+"/"+ Double.toString(first)+"/"+Double.toString(sec)+"/";
